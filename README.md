@@ -26,3 +26,14 @@ Chrysalis was designed to migrate VMs from all major cloud services and VM manag
                 --vm-host: either IP address or FQDN of  the VM
                 --ssh-key: the private key for the root to access the VM
                 --staging: a place in the local system to hold DD images from VM. It typically requires a large disk space.
+
+
+**Example Execution**
+
+
+
+**Run Application**
+
+Once your application has been converted, you should see the resulting container image. You can run this with any existing container runtime (lxc, docker, rkt).
+
+`docker run -t -i CENTOS3GBNGINX bash`
