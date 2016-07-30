@@ -30,10 +30,26 @@ Chrysalis was designed to migrate VMs from all major cloud services and VM manag
 
 **Example Execution**
 
-
+```
+[root@evo0120 ~]# crysls --mgmt-server vcenter.localhost --user root --vm CentOS3GBNGINX
+Password: 
+INFO: Analyzing "CentOS3GBNGINX" VM from host vcenter.localhost
+INFO: Downloading virtual machine file from vcenter.localhost
+[################################] 196608/196609 - 00:00:40
+INFO: Downloaded file at /tmp/CentOS3GBNGINX
+INFO: Converting virtual machine CentOS3GBNGINX ...
+    (100.00/100%)
+INFO: Migrating Data
+    578,869,182  64%   14.10MB/s    0:00:39 (xfr#16710, to-chk=0/30725)   
+INFO: Committing new image centos3gbnginx-img 
+INFO: Succeed in creating image centos3gbnginx-img !
+INFO: Cleaning up the host ...
+INFO: All done !!!
+```
 
 **Run Application**
 
-Once your application has been converted, you should see the resulting container image. You can run this with any existing container runtime (lxc, docker, rkt).
+To run your application with an existing container runtime (lxc, docker, rkt), start the container image:
 
+e.g.:
 `docker run -t -i CENTOS3GBNGINX bash`
