@@ -51,5 +51,7 @@ INFO: All done !!!
 
 To run your application with an existing container runtime (lxc, docker, rkt), start the container image:
 
-e.g.:
-`docker run -t -i CENTOS3GBNGINX bash`
+```
+[root@localhost ~]# docker run -t -i centos3gbnginx-img bash
+[root@9eda69079224 /]# echo "Hello Container" `hostname`
+```
