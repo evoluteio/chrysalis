@@ -11,7 +11,7 @@ Chrysalis was designed to migrate VMs from all major cloud services and VM manag
 
 -  To download and migrate from vCenter management server:
 
-          ./v2c.py --mgmt-server server-name --vm vm-name --user user-name
+          crysls --mgmt-server server-name --vm vm-name --user user-name
 
           where:
                 --mgmt-server: the vcenter server (either IP or FQDN)
@@ -20,7 +20,7 @@ Chrysalis was designed to migrate VMs from all major cloud services and VM manag
 
 -    To download and migrate from EC2:
 
-          ./v2c.py --vm-host server-name --ssh-key root-private-key --staging staging-dir
+          crysls --vm-host server-name --ssh-key root-private-key --staging staging-dir
 
           where:
                 --vm-host: either IP address or FQDN of  the VM
@@ -28,6 +28,7 @@ Chrysalis was designed to migrate VMs from all major cloud services and VM manag
                 --staging: a place in the local system to hold DD images from VM. It typically requires a large disk space.
                 
 
-Start your application (e.g. centos3gbnginx-img) with an existing container runtime (docker, rkt, lxc) or platform (evo, ecs, etc).
+**Run Application**
+Start your application with an existing container runtime (docker, rkt, lxc) or platform (evo, ecs, etc).
 
 
