@@ -2,7 +2,9 @@
 
 **Overview**
 
-Chrysalis was designed to migrate VMs from all major cloud services and VM management systems. While the development of Chrysalis is under quick iterations, the system currently supports migrating VMs from the following system to containers:
+Chrysalis was designed to migrate VMs from all major cloud services and VM management systems. 
+
+While the development of Chrysalis is under quick iterations, the system currently supports migrating VMs from the following system to containers:
 
 - Migrate VMs from VMWare management systems such as ESXi servers
 - Migrate VMs from Amazon EC2 servers
