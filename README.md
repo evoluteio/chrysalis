@@ -1,4 +1,4 @@
-# Chrysalis v0.4 - Convert VMs to Containers
+# Chrysalis v0.5 - Convert VMs to Containers
 
 **Overview**
 
@@ -8,6 +8,24 @@ While the development of Chrysalis is under quick iterations, the system current
 
 - Migrate VMs from VMWare management systems such as ESXi servers
 - Migrate VMs from Amazon EC2 servers
+
+
+**Downloading crysls**
+
+crysls can be donwloaded and installed via the following repository:
+
+
+          [crysls]
+          name=Evolute Packages for EL 7 x86_64
+          baseurl=http://yum.evolute.io/rpm/crysls
+          enabled=1
+          gpgcheck=0
+
+
+Install the crysls package via yum:
+
+          $ yum install crysls
+
 
 **Command line options**
 
