@@ -12,7 +12,7 @@ While the development of Chrysalis is under quick iterations, the system current
 
 **Downloading crysls**
 
-crysls can be donwloaded and installed via the following repository:
+- crysls can be donwloaded and installed via the following repository:
 
 
           [crysls]
@@ -22,7 +22,7 @@ crysls can be donwloaded and installed via the following repository:
           gpgcheck=0
 
 
-Install the crysls package via yum:
+- Install the crysls package via yum:
 
           $ yum install crysls
 
