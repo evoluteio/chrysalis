@@ -1,4 +1,4 @@
-# Chrysalis v0.5 - Convert VMs to Containers
+# Chrysalis v0.5 - Containerize any application
 
 **Overview**
 
@@ -8,6 +8,7 @@ While the development of Chrysalis is under quick iterations, the system current
 
 - Migrate VMs from VMWare management systems such as ESXi servers
 - Migrate VMs from Amazon EC2 servers
+- Migrate supported HP, Dell and Supermicro servers
 
 
 **Downloading crysls**
@@ -38,7 +39,7 @@ While the development of Chrysalis is under quick iterations, the system current
                 --vm: the VM name for which to migrate
                 --user: administrator's name to access center, e.g,. the root
 
--    To download and migrate from EC2:
+-    To download and migrate from other systems including EC2:
 
           crysls --vm-host server-name --ssh-key root-private-key --staging staging-dir
 
