@@ -2,7 +2,7 @@
 
 **Overview**
 
-Chrysalis was designed to migrate applications from all major cloud services and VM management systems. 
+Chrysalis was designed to migrate applications across all infrastructure environments including major cloud services and VM management systems. 
 
 While the development of Chrysalis is under quick iterations, the system currently supports migrating VMs from the following system to containers:
 
