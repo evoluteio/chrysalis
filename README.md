@@ -13,7 +13,7 @@ While the development of Chrysalis is under quick iterations, the system current
 
 **Downloading crysls**
 
-- crysls can be donwloaded and installed via the following repository:
+- crysls can be downloaded and installed via the following repository:
 
 
 		[crysls]
