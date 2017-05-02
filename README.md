@@ -15,39 +15,39 @@ While the development of Chrysalis is under quick iterations, the system current
 
 - crysls can be downloaded and installed via the following repository:
 
-
-		[crysls]
-		name=Evolute Packages for EL 7 x86_64
-		baseurl=http://yum.evolute.io/rpm/crysls
-		enabled=1
-		gpgcheck=0
-
-
+```
+[crysls]
+name=Evolute Packages for EL 7 x86_64
+baseurl=http://yum.evolute.io/rpm/crysls
+enabled=1
+gpgcheck=0
+```
 - Install the crysls package via yum:
-
-          $ yum install crysls
-
+```
+$ yum install crysls
+```
 
 **Command line options**
 
 -  To download and migrate from vCenter management server:
+```
+crysls --mgmt-server server-name --vm vm-name --user user-name
 
-          crysls --mgmt-server server-name --vm vm-name --user user-name
-
-          where:
-                --mgmt-server: the vcenter server (either IP or FQDN)
-                --vm: the VM name for which to migrate
-                --user: administrator's name to access center, e.g,. the root
+       where:
+       --mgmt-server: the vcenter server (either IP or FQDN)
+       --vm: the VM name for which to migrate
+       --user: administrator's name to access center, e.g,. the root
 
 -    To download and migrate from other systems including EC2:
 
-          crysls --vm-host server-name --ssh-key root-private-key --staging staging-dir
+       crysls --vm-host server-name --ssh-key root-private-key --staging staging-dir
 
-          where:
-                --vm-host: either IP address or FQDN of  the VM
-                --ssh-key: the private key for the root to access the VM
-                --staging: a place in the local system to hold DD images from VM. It typically requires a large disk space.
+       where:
+       --vm-host: either IP address or FQDN of  the VM
+       --ssh-key: the private key for the root to access the VM
+       --staging: a place in the local system to hold DD images from VM. It typically requires a large disk space.
                 
+```
 
 **Run Application**
 
